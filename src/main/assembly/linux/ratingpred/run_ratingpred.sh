@@ -1,0 +1,1 @@
+java -Xmx4G -cp ../lib/jrec.jar de.unikn.ie.sna.recsys.jrec.socrec.MainCLI $@

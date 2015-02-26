@@ -1,0 +1,13 @@
+double deg = 5;
+double[] oDegs = new double[] {2d, 3d, 2d, 4d, 2d};
+double[] t = new double[oDegs.length];
+double sum = 0d;
+for(int i = 0; i < oDegs.length; i++) {
+    t[i] = Math.sqrt(oDegs[i]/(deg + oDegs[i]));
+    sum += t[i];
+}
+
+for(int i = 0; i < oDegs.length; i++) {
+	t[i] = t[i] / sum;
+	System.out.println(i + ": " + t[i]);
+}

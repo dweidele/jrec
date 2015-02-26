@@ -1,0 +1,10 @@
+double[] oPRs = new double[] {16.635d, 11.639d, 11.748d, 11.636d, 21.64d};
+double sum = 0d;
+for(int i = 0; i < oPRs.length; i++) {
+    sum += oPRs[i];
+}
+
+for(int i = 0; i < oPRs.length; i++) {
+    oPRs[i] = oPRs[i] / sum;
+	System.out.println(i + ": " + oPRs[i]);
+}
